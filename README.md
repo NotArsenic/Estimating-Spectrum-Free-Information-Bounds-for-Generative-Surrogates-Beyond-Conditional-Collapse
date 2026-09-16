@@ -59,4 +59,3 @@ bash Scripts/reproduce.sh
 └── README.md                            # Repository documentation
 ```
 
-# Estimating-Spectrum-Free-Information-Bounds-for-Generative-Surrogates-Beyond-Conditional-Collapse

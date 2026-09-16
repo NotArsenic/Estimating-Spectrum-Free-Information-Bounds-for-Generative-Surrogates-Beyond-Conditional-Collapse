@@ -1,0 +1,45 @@
+# datasets and raw inputs
+!Data/dataset/.gitkeep
+!Data/Root_files/.gitkeep
+*.parquet
+*.root
+
+# Root files
+*/Root_files/*.root
+
+# Processed Dataset
+/Data/dataset/*.parquet
+
+# # training artifacts: checkpoints, metrics, dumps and the run registry
+# Surrogates/Output/
+
+# Ignore model dumps
+**/dump/
+
+# smoke runs and test scratch trees
+Smoke/
+
+# W&B run directories
+wandb/
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# LaTeX intermediates
+Paper/*.aux
+Paper/*.bbl
+Paper/*.blg
+Paper/*.fdb_latexmk
+Paper/*.fls
+Paper/*.log
+Paper/*.out
+Paper/*.synctex.gz
+
+# Testing and scratch files
+tests/
+pytest.ini
+
+# Local tooling
+*/paperkit/

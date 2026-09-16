@@ -1,0 +1,22 @@
+{
+  "model": "mdn",
+  "stage": "parton2reco",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "conditioner_blocks": [
+    "kinematics",
+    "pileup",
+    "flavour",
+    "fourier_phi"
+  ],
+  "n_components": 8,
+  "lambda_calib": 0.1,
+  "pi_tau_start": 1.5,
+  "pi_tau_anneal_frac": 0.5,
+  "lr": 0.001,
+  "save_root": "ablation",
+  "run_tag": "lr0p001"
+}

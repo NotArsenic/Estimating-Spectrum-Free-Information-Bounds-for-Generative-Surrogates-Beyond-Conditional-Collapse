@@ -1,0 +1,63 @@
+{
+  "description": "model / Marginal-sampler ratios of marginal KL and W1 on the full test split; > 1 means the model is worse",
+  "seed": 1,
+  "n_test": 1076283,
+  "metrics": {
+    "MDN": "Surrogates/Output/MDN/seed_1/metrics.json",
+    "CFM": "Surrogates/Output/CFM/seed_1/metrics.json"
+  },
+  "checkpoint_sha256": {
+    "MDN": "3fcab4f11c2f3e3b",
+    "CFM": "174779bf57cf3588"
+  },
+  "per_target": {
+    "log_pT_resp": {
+      "kl_dummy": 0.00020567540686941937,
+      "w1_dummy": 0.00036834447290925206,
+      "kl_mdn": 0.0014527436809829747,
+      "kl_ratio_mdn_over_dummy": 7.063283370117764,
+      "w1_mdn": 0.006576038689990106,
+      "w1_ratio_mdn_over_dummy": 17.852958775385847,
+      "kl_cfm": 0.00023226486438689828,
+      "kl_ratio_cfm_over_dummy": 1.1292787403326263,
+      "w1_cfm": 0.0009487519612934347,
+      "w1_ratio_cfm_over_dummy": 2.575719282008002
+    },
+    "delta_eta": {
+      "kl_dummy": 0.00020213868472882017,
+      "w1_dummy": 0.0001323665302304554,
+      "kl_mdn": 0.003789024263836516,
+      "kl_ratio_mdn_over_dummy": 18.744676551743147,
+      "w1_mdn": 0.0021450852758034523,
+      "w1_ratio_mdn_over_dummy": 16.205647092726334,
+      "kl_cfm": 0.0007950208463040577,
+      "kl_ratio_cfm_over_dummy": 3.933046499093533,
+      "w1_cfm": 0.0002380358077211634,
+      "w1_ratio_cfm_over_dummy": 1.7983081320235077
+    },
+    "delta_phi": {
+      "kl_dummy": 0.00014735043749690337,
+      "w1_dummy": 6.897950069533482e-05,
+      "kl_mdn": 0.003298759961663642,
+      "kl_ratio_mdn_over_dummy": 22.387174532365854,
+      "w1_mdn": 0.0012430401234861865,
+      "w1_ratio_mdn_over_dummy": 18.020427967091027,
+      "kl_cfm": 0.0010564639308681906,
+      "kl_ratio_cfm_over_dummy": 7.169737320192161,
+      "w1_cfm": 0.00014858975405440515,
+      "w1_ratio_cfm_over_dummy": 2.154114665321932
+    },
+    "log_mass_frac": {
+      "kl_dummy": 0.00029204182311902015,
+      "w1_dummy": 0.0008649148069073953,
+      "kl_mdn": 0.0014673129859094005,
+      "kl_ratio_mdn_over_dummy": 5.024324838950908,
+      "w1_mdn": 0.005471797852309173,
+      "w1_ratio_mdn_over_dummy": 6.3264009456309696,
+      "kl_cfm": 0.0003614679432695596,
+      "kl_ratio_cfm_over_dummy": 1.2377266358943568,
+      "w1_cfm": 0.0009398158454848764,
+      "w1_ratio_cfm_over_dummy": 1.0865993251350368
+    }
+  }
+}

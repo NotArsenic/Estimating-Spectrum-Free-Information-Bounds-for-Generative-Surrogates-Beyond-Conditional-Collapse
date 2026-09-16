@@ -1,0 +1,12 @@
+{
+  "model": "fm",
+  "stage": "genjet2reco",
+  "seeds": [1, 2, 3],
+  "conditioner_blocks": ["kinematics", "pileup", "flavour", "fourier_phi"],
+  "solver": "midpoint",
+  "n_steps": 100,
+  "n_hdr_events": 20000,
+  "n_hdr_samples": 20,
+  "n_hdr_steps": 50,
+  "val_crps_steps": 20
+}

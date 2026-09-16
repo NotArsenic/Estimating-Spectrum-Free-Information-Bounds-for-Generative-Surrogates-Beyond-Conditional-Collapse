@@ -1,0 +1,2953 @@
+{
+  "meta": {
+    "generated_utc": "2026-09-12T04:44:42+00:00",
+    "git_sha": "c00070cfed006112c7932770948f1ce1fbda9cd7",
+    "git_dirty": true,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "smoke": false,
+    "environment": {
+      "python": "3.12.13",
+      "numpy": "2.4.4",
+      "polars": "1.42.1",
+      "scipy": "1.18.0",
+      "matplotlib": "3.11.1",
+      "torch": "2.13.0+cu132",
+      "cuda": "13.2",
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "git_sha": "c00070cfed006112c7932770948f1ce1fbda9cd7",
+      "git_dirty": false
+    }
+  },
+  "quantities": {
+    "metric_trap.kl.MDN.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "KL(truth||MDN) / KL(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 7.063283370117764,
+        "2": 3.6489009662042315,
+        "3": 5.820633244988728
+      }
+    },
+    "metric_trap.kl.MDN.delta_eta": {
+      "unit": "ratio",
+      "definition": "KL(truth||MDN) / KL(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 18.744676551743147,
+        "2": 15.059717565346697,
+        "3": 16.280401991380522
+      }
+    },
+    "metric_trap.kl.MDN.delta_phi": {
+      "unit": "ratio",
+      "definition": "KL(truth||MDN) / KL(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 22.387174532365854,
+        "2": 17.793163343952152,
+        "3": 16.913166506394205
+      }
+    },
+    "metric_trap.kl.MDN.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "KL(truth||MDN) / KL(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 5.024324838950908,
+        "2": 4.261175175916056,
+        "3": 3.7414548806118826
+      }
+    },
+    "metric_trap.kl.MDN.all": {
+      "unit": "ratio",
+      "definition": "MDN/Marginal KL ratio over 4 targets x seeds",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "pooled": [
+        7.063283370117764,
+        3.6489009662042315,
+        5.820633244988728,
+        18.744676551743147,
+        15.059717565346697,
+        16.280401991380522,
+        22.387174532365854,
+        17.793163343952152,
+        16.913166506394205,
+        5.024324838950908,
+        4.261175175916056,
+        3.7414548806118826
+      ]
+    },
+    "metric_trap.w1.MDN.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "W1(truth||MDN) / W1(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 17.852958775385847,
+        "2": 10.209982244975466,
+        "3": 11.385948356273921
+      }
+    },
+    "metric_trap.w1.MDN.delta_eta": {
+      "unit": "ratio",
+      "definition": "W1(truth||MDN) / W1(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 16.205647092726334,
+        "2": 10.380589301644093,
+        "3": 15.859218944030085
+      }
+    },
+    "metric_trap.w1.MDN.delta_phi": {
+      "unit": "ratio",
+      "definition": "W1(truth||MDN) / W1(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 18.020427967091027,
+        "2": 16.21778273655508,
+        "3": 17.485106897541854
+      }
+    },
+    "metric_trap.w1.MDN.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "W1(truth||MDN) / W1(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 6.3264009456309696,
+        "2": 4.442743918556486,
+        "3": 3.754730285906846
+      }
+    },
+    "metric_trap.w1.MDN.all": {
+      "unit": "ratio",
+      "definition": "MDN/Marginal W1 ratio over 4 targets x seeds",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "pooled": [
+        17.852958775385847,
+        10.209982244975466,
+        11.385948356273921,
+        16.205647092726334,
+        10.380589301644093,
+        15.859218944030085,
+        18.020427967091027,
+        16.21778273655508,
+        17.485106897541854,
+        6.3264009456309696,
+        4.442743918556486,
+        3.754730285906846
+      ]
+    },
+    "metric_trap.MDN.all": {
+      "unit": "ratio",
+      "definition": "MDN/Marginal KL and W1 ratios over 8 cells x seeds",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "pooled": [
+        7.063283370117764,
+        3.6489009662042315,
+        5.820633244988728,
+        18.744676551743147,
+        15.059717565346697,
+        16.280401991380522,
+        22.387174532365854,
+        17.793163343952152,
+        16.913166506394205,
+        5.024324838950908,
+        4.261175175916056,
+        3.7414548806118826,
+        17.852958775385847,
+        10.209982244975466,
+        11.385948356273921,
+        16.205647092726334,
+        10.380589301644093,
+        15.859218944030085,
+        18.020427967091027,
+        16.21778273655508,
+        17.485106897541854,
+        6.3264009456309696,
+        4.442743918556486,
+        3.754730285906846
+      ]
+    },
+    "metric_trap.MDN.cells_worse": {
+      "unit": "cells of 8",
+      "definition": "number of (target, divergence) cells where MDN is worse than the Marginal sampler",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 8,
+        "2": 8,
+        "3": 8
+      }
+    },
+    "metric_trap.kl.CFM.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "KL(truth||CFM) / KL(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 1.1292787403326263,
+        "2": 0.8700326965890697,
+        "3": 0.706733096507915
+      }
+    },
+    "metric_trap.kl.CFM.delta_eta": {
+      "unit": "ratio",
+      "definition": "KL(truth||CFM) / KL(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 3.933046499093533,
+        "2": 3.97804406617776,
+        "3": 4.488309347242767
+      }
+    },
+    "metric_trap.kl.CFM.delta_phi": {
+      "unit": "ratio",
+      "definition": "KL(truth||CFM) / KL(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 7.169737320192161,
+        "2": 5.836565399865611,
+        "3": 6.077440717540401
+      }
+    },
+    "metric_trap.kl.CFM.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "KL(truth||CFM) / KL(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 1.2377266358943568,
+        "2": 0.8958288651977494,
+        "3": 1.1994535135186388
+      }
+    },
+    "metric_trap.kl.CFM.all": {
+      "unit": "ratio",
+      "definition": "CFM/Marginal KL ratio over 4 targets x seeds",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "pooled": [
+        1.1292787403326263,
+        0.8700326965890697,
+        0.706733096507915,
+        3.933046499093533,
+        3.97804406617776,
+        4.488309347242767,
+        7.169737320192161,
+        5.836565399865611,
+        6.077440717540401,
+        1.2377266358943568,
+        0.8958288651977494,
+        1.1994535135186388
+      ]
+    },
+    "metric_trap.w1.CFM.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "W1(truth||CFM) / W1(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 2.575719282008002,
+        "2": 1.6589054312588034,
+        "3": 0.8546725595213542
+      }
+    },
+    "metric_trap.w1.CFM.delta_eta": {
+      "unit": "ratio",
+      "definition": "W1(truth||CFM) / W1(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 1.7983081320235077,
+        "2": 1.5618032690426606,
+        "3": 2.164372658827144
+      }
+    },
+    "metric_trap.w1.CFM.delta_phi": {
+      "unit": "ratio",
+      "definition": "W1(truth||CFM) / W1(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 2.154114665321932,
+        "2": 1.7763205694729935,
+        "3": 1.7827430046117585
+      }
+    },
+    "metric_trap.w1.CFM.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "W1(truth||CFM) / W1(truth||Marginal sampler), full test split",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 1.0865993251350368,
+        "2": 0.895482278184701,
+        "3": 0.7748798462029752
+      }
+    },
+    "metric_trap.w1.CFM.all": {
+      "unit": "ratio",
+      "definition": "CFM/Marginal W1 ratio over 4 targets x seeds",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "pooled": [
+        2.575719282008002,
+        1.6589054312588034,
+        0.8546725595213542,
+        1.7983081320235077,
+        1.5618032690426606,
+        2.164372658827144,
+        2.154114665321932,
+        1.7763205694729935,
+        1.7827430046117585,
+        1.0865993251350368,
+        0.895482278184701,
+        0.7748798462029752
+      ]
+    },
+    "metric_trap.CFM.all": {
+      "unit": "ratio",
+      "definition": "CFM/Marginal KL and W1 ratios over 8 cells x seeds",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "pooled": [
+        1.1292787403326263,
+        0.8700326965890697,
+        0.706733096507915,
+        3.933046499093533,
+        3.97804406617776,
+        4.488309347242767,
+        7.169737320192161,
+        5.836565399865611,
+        6.077440717540401,
+        1.2377266358943568,
+        0.8958288651977494,
+        1.1994535135186388,
+        2.575719282008002,
+        1.6589054312588034,
+        0.8546725595213542,
+        1.7983081320235077,
+        1.5618032690426606,
+        2.164372658827144,
+        2.154114665321932,
+        1.7763205694729935,
+        1.7827430046117585,
+        1.0865993251350368,
+        0.895482278184701,
+        0.7748798462029752
+      ]
+    },
+    "metric_trap.CFM.cells_worse": {
+      "unit": "cells of 8",
+      "definition": "number of (target, divergence) cells where CFM is worse than the Marginal sampler",
+      "sources": [
+        "Results/comparison/dummy_sampler_seed_1.json",
+        "Results/comparison/dummy_sampler_seed_2.json",
+        "Results/comparison/dummy_sampler_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 8,
+        "2": 5,
+        "3": 5
+      }
+    },
+    "knn.slope.log_pT_resp": {
+      "unit": "CRPS per radius",
+      "definition": "global k-NN sweep slope (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.0012380390235539375,
+        "2": 0.00025737699295949455,
+        "3": 3.9355643444804015e-05
+      }
+    },
+    "knn.slope_se.log_pT_resp": {
+      "unit": "CRPS per radius",
+      "definition": "global k-NN sweep slope_se (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.0003397261828636674,
+        "2": 5.49453231577656e-05,
+        "3": 0.0004138659077899121
+      }
+    },
+    "knn.intercept_ratio.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "global k-NN sweep intercept_ratio (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9634627856006447,
+        "2": 0.9652098068315162,
+        "3": 0.9650255543048527
+      }
+    },
+    "knn.S_global.log_pT_resp": {
+      "unit": "fraction",
+      "definition": "1 - r->0 k-NN intercept / global floor",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.03653721439935531,
+        "2": 0.03479019316848375,
+        "3": 0.034974445695147294
+      }
+    },
+    "knn.S_diff.log_pT_resp": {
+      "unit": "fraction",
+      "definition": "1 - median over pT bins of (bin r->0 intercept / within-bin floor)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.024104140209448843,
+        "2": 0.022564046904702706,
+        "3": 0.022618697712149194
+      }
+    },
+    "knn.artifact_fraction.log_pT_resp": {
+      "unit": "fraction",
+      "definition": "1 - S_diff / S_global",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.3402852241008786,
+        "2": 0.35142507558298486,
+        "3": 0.35327930828972254
+      }
+    },
+    "knn.diff_bins_above_1.log_pT_resp": {
+      "unit": "bins",
+      "definition": "pT bins whose k-NN ceiling ratio exceeds 1",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    },
+    "ratio.MDN.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "mean MDN CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9636729681714756,
+        "2": 0.9641075272263412,
+        "3": 0.9634784296786222
+      }
+    },
+    "ratio.CFM.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "mean CFM CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9636162492529678,
+        "2": 0.9641607553103969,
+        "3": 0.9632470611540835
+      }
+    },
+    "ratio.Marginal.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "mean Marginal CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 1.0003151140135749,
+        "2": 1.0000107254630437,
+        "3": 0.999850414312222
+      }
+    },
+    "ratio.LookupTable.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "mean LookupTable CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9668996797363816,
+        "2": 0.9673064114257681,
+        "3": 0.9668083294941378
+      }
+    },
+    "lut_recovery.log_pT_resp": {
+      "unit": "fraction",
+      "definition": "(1 - R_LookupTable) / (1 - R_CFM)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.909755580004858,
+        "2": 0.9122287274016196,
+        "3": 0.9031024878041856
+      }
+    },
+    "knn.slope.delta_eta": {
+      "unit": "CRPS per radius",
+      "definition": "global k-NN sweep slope (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.0013491473193048735,
+        "2": 2.6200744160184442e-05,
+        "3": 0.0003352668698572817
+      }
+    },
+    "knn.slope_se.delta_eta": {
+      "unit": "CRPS per radius",
+      "definition": "global k-NN sweep slope_se (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.0004708509039988707,
+        "2": 6.580671543189878e-05,
+        "3": 0.00010298628186109006
+      }
+    },
+    "knn.intercept_ratio.delta_eta": {
+      "unit": "ratio",
+      "definition": "global k-NN sweep intercept_ratio (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9744319338914031,
+        "2": 0.9797548880116301,
+        "3": 0.9786278674155625
+      }
+    },
+    "knn.S_global.delta_eta": {
+      "unit": "fraction",
+      "definition": "1 - r->0 k-NN intercept / global floor",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.025568066108596854,
+        "2": 0.020245111988369868,
+        "3": 0.021372132584437487
+      }
+    },
+    "knn.S_diff.delta_eta": {
+      "unit": "fraction",
+      "definition": "1 - median over pT bins of (bin r->0 intercept / within-bin floor)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.01685097560611859,
+        "2": 0.012658216000801858,
+        "3": 0.01496339023491533
+      }
+    },
+    "knn.artifact_fraction.delta_eta": {
+      "unit": "fraction",
+      "definition": "1 - S_diff / S_global",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.3409366381271708,
+        "2": 0.37475198911848073,
+        "3": 0.2998644297288704
+      }
+    },
+    "knn.diff_bins_above_1.delta_eta": {
+      "unit": "bins",
+      "definition": "pT bins whose k-NN ceiling ratio exceeds 1",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    },
+    "ratio.MDN.delta_eta": {
+      "unit": "ratio",
+      "definition": "mean MDN CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9785048299855243,
+        "2": 0.9793651983339707,
+        "3": 0.9796464331545891
+      }
+    },
+    "ratio.CFM.delta_eta": {
+      "unit": "ratio",
+      "definition": "mean CFM CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9783825788321692,
+        "2": 0.978816335021615,
+        "3": 0.9790659508567167
+      }
+    },
+    "ratio.Marginal.delta_eta": {
+      "unit": "ratio",
+      "definition": "mean Marginal CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9999771297341216,
+        "2": 1.0001509889262992,
+        "3": 1.0000116968122343
+      }
+    },
+    "ratio.LookupTable.delta_eta": {
+      "unit": "ratio",
+      "definition": "mean LookupTable CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9864999097163556,
+        "2": 0.9873005265696871,
+        "3": 0.9874107423272329
+      }
+    },
+    "lut_recovery.delta_eta": {
+      "unit": "fraction",
+      "definition": "(1 - R_LookupTable) / (1 - R_CFM)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.6245004979471867,
+        "2": 0.59949368738936,
+        "3": 0.6013770955919596
+      }
+    },
+    "knn.slope.delta_phi": {
+      "unit": "CRPS per radius",
+      "definition": "global k-NN sweep slope (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.0004123079121702194,
+        "2": 0.00020557681840421613,
+        "3": -5.656262383554099e-05
+      }
+    },
+    "knn.slope_se.delta_phi": {
+      "unit": "CRPS per radius",
+      "definition": "global k-NN sweep slope_se (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.00023584427498318135,
+        "2": 8.868314325595104e-05,
+        "3": 0.00021758497904186597
+      }
+    },
+    "knn.intercept_ratio.delta_phi": {
+      "unit": "ratio",
+      "definition": "global k-NN sweep intercept_ratio (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.986423990979194,
+        "2": 0.9871719811630799,
+        "3": 0.9883494147325731
+      }
+    },
+    "knn.S_global.delta_phi": {
+      "unit": "fraction",
+      "definition": "1 - r->0 k-NN intercept / global floor",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.013576009020806024,
+        "2": 0.012828018836920085,
+        "3": 0.011650585267426905
+      }
+    },
+    "knn.S_diff.delta_phi": {
+      "unit": "fraction",
+      "definition": "1 - median over pT bins of (bin r->0 intercept / within-bin floor)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.004832823852173762,
+        "2": 0.004450481085180313,
+        "3": 0.00151139743786044
+      }
+    },
+    "knn.artifact_fraction.delta_phi": {
+      "unit": "fraction",
+      "definition": "1 - S_diff / S_global",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.6440173364081315,
+        "2": 0.6530655947922788,
+        "3": 0.8702728315215155
+      }
+    },
+    "knn.diff_bins_above_1.delta_phi": {
+      "unit": "bins",
+      "definition": "pT bins whose k-NN ceiling ratio exceeds 1",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 2,
+        "2": 3,
+        "3": 3
+      }
+    },
+    "ratio.MDN.delta_phi": {
+      "unit": "ratio",
+      "definition": "mean MDN CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9881797435350818,
+        "2": 0.9877498088937742,
+        "3": 0.9882158052783634
+      }
+    },
+    "ratio.CFM.delta_phi": {
+      "unit": "ratio",
+      "definition": "mean CFM CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9874570963594114,
+        "2": 0.9872772454527904,
+        "3": 0.9877029087531193
+      }
+    },
+    "ratio.Marginal.delta_phi": {
+      "unit": "ratio",
+      "definition": "mean Marginal CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 1.0000610721209215,
+        "2": 1.0000818300670928,
+        "3": 1.000240415224394
+      }
+    },
+    "ratio.LookupTable.delta_phi": {
+      "unit": "ratio",
+      "definition": "mean LookupTable CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9894820940552278,
+        "2": 0.9890861039066342,
+        "3": 0.9896637970841484
+      }
+    },
+    "lut_recovery.delta_phi": {
+      "unit": "fraction",
+      "definition": "(1 - R_LookupTable) / (1 - R_CFM)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.8385543129532166,
+        "2": 0.8578249350695409,
+        "3": 0.8405404748438748
+      }
+    },
+    "knn.slope.log_mass_frac": {
+      "unit": "CRPS per radius",
+      "definition": "global k-NN sweep slope (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.00203547703783164,
+        "2": 0.0015974311397842272,
+        "3": -0.0032787154629659735
+      }
+    },
+    "knn.slope_se.log_mass_frac": {
+      "unit": "CRPS per radius",
+      "definition": "global k-NN sweep slope_se (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.0012396374554363352,
+        "2": 0.001054142321432104,
+        "3": 0.0013217126674035997
+      }
+    },
+    "knn.intercept_ratio.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "global k-NN sweep intercept_ratio (K ladder, scoring events)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.7138740820717491,
+        "2": 0.712537261369835,
+        "3": 0.7134125870851972
+      }
+    },
+    "knn.S_global.log_mass_frac": {
+      "unit": "fraction",
+      "definition": "1 - r->0 k-NN intercept / global floor",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.28612591792825093,
+        "2": 0.287462738630165,
+        "3": 0.28658741291480283
+      }
+    },
+    "knn.S_diff.log_mass_frac": {
+      "unit": "fraction",
+      "definition": "1 - median over pT bins of (bin r->0 intercept / within-bin floor)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.10420525880758313,
+        "2": 0.1022305619951549,
+        "3": 0.0971770305853008
+      }
+    },
+    "knn.artifact_fraction.log_mass_frac": {
+      "unit": "fraction",
+      "definition": "1 - S_diff / S_global",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.6358062926906409,
+        "2": 0.6443693451112649,
+        "3": 0.660916613200351
+      }
+    },
+    "knn.diff_bins_above_1.log_mass_frac": {
+      "unit": "bins",
+      "definition": "pT bins whose k-NN ceiling ratio exceeds 1",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    },
+    "ratio.MDN.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "mean MDN CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.7155643419379676,
+        "2": 0.7138730796216968,
+        "3": 0.7112770229179751
+      }
+    },
+    "ratio.CFM.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "mean CFM CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.7148796515319287,
+        "2": 0.7131959400326081,
+        "3": 0.7107650774491586
+      }
+    },
+    "ratio.Marginal.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "mean Marginal CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 1.0002265895721547,
+        "2": 1.000171072561781,
+        "3": 1.0005536535655817
+      }
+    },
+    "ratio.LookupTable.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "mean LookupTable CRPS / global floor, scoring events",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.7180977316838922,
+        "2": 0.7167692505244473,
+        "3": 0.7141098221148094
+      }
+    },
+    "lut_recovery.log_mass_frac": {
+      "unit": "fraction",
+      "definition": "(1 - R_LookupTable) / (1 - R_CFM)",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.9887132568080319,
+        "2": 0.9875409347683382,
+        "3": 0.988435889289742
+      }
+    },
+    "knn.consistency_bound": {
+      "unit": "ratio",
+      "definition": "|R_model - k-NN intercept ratio| over seeds x models x targets",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "pooled": [
+        0.00021018257083094127,
+        0.0011022796051750605,
+        0.0015471246262305227,
+        0.00015346365232316028,
+        0.0010490515211193374,
+        0.001778493150769167,
+        0.004072896094121203,
+        0.00038968967765939944,
+        0.001018565739026589,
+        0.003950644940766024,
+        0.0009385529900151068,
+        0.00043808344115414677,
+        0.0017557525558877796,
+        0.0005778277306942581,
+        0.00013360945420970438,
+        0.0010331053802173917,
+        0.00010526428971047164,
+        0.0006465059794538153,
+        0.001690259866218513,
+        0.0013358182518617978,
+        0.0021355641672220482,
+        0.0010055694601796006,
+        0.0006586786627731378,
+        0.0026475096360385475
+      ]
+    },
+    "knn.zero_distance_fraction": {
+      "unit": "fraction",
+      "definition": "scoring events whose nearest capped reference neighbour is at distance 0",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.018895,
+        "2": 0.01878,
+        "3": 0.01961
+      }
+    },
+    "knn.self_overlap_deflation.k5": {
+      "unit": "fraction",
+      "definition": "1 - CRPS(self included) / CRPS(self excluded) at k=5, mean over targets",
+      "sources": [
+        "Results/comparison/seed_1/comparison_summary.json",
+        "Results/comparison/seed_2/comparison_summary.json",
+        "Results/comparison/seed_3/comparison_summary.json"
+      ],
+      "per_seed": {
+        "1": 0.39934343129870614,
+        "2": 0.3988681068169758,
+        "3": 0.39995152605081846
+      }
+    },
+    "training.MDN.n_epochs": {
+      "unit": "",
+      "definition": "MDN n_epochs; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 100,
+        "2": 100,
+        "3": 100
+      }
+    },
+    "training.MDN.best_val_loss_epoch": {
+      "unit": "",
+      "definition": "MDN best_val_loss_epoch; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 38,
+        "2": 35,
+        "3": 42
+      }
+    },
+    "training.MDN.epochs_past_best": {
+      "unit": "",
+      "definition": "MDN epochs_past_best; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 62,
+        "2": 65,
+        "3": 58
+      }
+    },
+    "training.MDN.val_loss_cost_pct": {
+      "unit": "",
+      "definition": "MDN val_loss_cost_pct; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 1.5313138206519443,
+        "2": 1.7077542841491669,
+        "3": 1.172065829981273
+      }
+    },
+    "training.MDN.mean_val_crps_cost_pct": {
+      "unit": "",
+      "definition": "MDN mean_val_crps_cost_pct; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.1808677767239595,
+        "2": 0.1375001924579451,
+        "3": 0.2250228766620102
+      }
+    },
+    "training.MDN.sensitivity_ratio": {
+      "unit": "",
+      "definition": "MDN sensitivity_ratio; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 8.466482246801961,
+        "2": 12.420013773227913,
+        "3": 5.208651881833971
+      }
+    },
+    "training.CFM.n_epochs": {
+      "unit": "",
+      "definition": "CFM n_epochs; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 100,
+        "2": 100,
+        "3": 100
+      }
+    },
+    "training.CFM.best_val_loss_epoch": {
+      "unit": "",
+      "definition": "CFM best_val_loss_epoch; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 100,
+        "2": 95,
+        "3": 96
+      }
+    },
+    "training.CFM.epochs_past_best": {
+      "unit": "",
+      "definition": "CFM epochs_past_best; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0,
+        "2": 5,
+        "3": 4
+      }
+    },
+    "training.CFM.val_loss_cost_pct": {
+      "unit": "",
+      "definition": "CFM val_loss_cost_pct; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.0,
+        "2": 0.00019838704551772632,
+        "3": 0.00012677664597081207
+      }
+    },
+    "training.CFM.mean_val_crps_cost_pct": {
+      "unit": "",
+      "definition": "CFM mean_val_crps_cost_pct; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.0,
+        "2": 0.0005838704798942078,
+        "3": -5.3996170420727914e-05
+      }
+    },
+    "training.CFM.sensitivity_ratio": {
+      "unit": "",
+      "definition": "CFM sensitivity_ratio; costs anchored at the best-val-loss epoch",
+      "sources": [
+        "Results/comparison/training_curve_seed_1.json",
+        "Results/comparison/training_curve_seed_2.json",
+        "Results/comparison/training_curve_seed_3.json"
+      ],
+      "per_seed": {
+        "1": null,
+        "2": 0.3397792016367608,
+        "3": -2.3478821735503184
+      }
+    },
+    "cone.median_ratio.0.20.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9758958597905512,
+        "2": 0.9774359530952973,
+        "3": 0.9773813022878508
+      }
+    },
+    "cone.target_sd.0.20.log_pT_resp": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.28425922989845276,
+        "2": 0.28094780445098877,
+        "3": 0.2801896035671234
+      }
+    },
+    "cone.median_ratio.0.15.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.15",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9725075672259567,
+        "2": 0.9744728369607505,
+        "3": 0.9711336130914466
+      }
+    },
+    "cone.target_sd.0.15.log_pT_resp": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.15",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.24105548858642578,
+        "2": 0.24190257489681244,
+        "3": 0.23898397386074066
+      }
+    },
+    "cone.median_ratio.0.10.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9699016837204386,
+        "2": 0.9762569591470176,
+        "3": 0.9701080359634187
+      }
+    },
+    "cone.target_sd.0.10.log_pT_resp": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.19913813471794128,
+        "2": 0.20370683073997498,
+        "3": 0.19633032381534576
+      }
+    },
+    "cone.sd_factor.log_pT_resp": {
+      "unit": "factor",
+      "definition": "target SD at dR < 0.20 / at dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 1.4274474866457736,
+        "2": 1.37917714114167,
+        "3": 1.427133608920493
+      }
+    },
+    "cone.drift.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "median ratio at dR < 0.10 minus at dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": -0.005994176070112545,
+        "2": -0.001178993948279694,
+        "3": -0.007273266324432148
+      }
+    },
+    "stage.median_ratio.parton2reco.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "parton2reco: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9773297104961818,
+        "2": 0.9763678874800163,
+        "3": 0.9756263776970138
+      }
+    },
+    "stage.median_ratio.parton2genjet.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "parton2genjet: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9842413033161228,
+        "2": 0.9826129496422744,
+        "3": 0.9842098004595425
+      }
+    },
+    "stage.median_ratio.genjet2reco.log_pT_resp": {
+      "unit": "ratio",
+      "definition": "genjet2reco: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9718528186723103,
+        "2": 0.9731213174054572,
+        "3": 0.9732522098659014
+      }
+    },
+    "cone.median_ratio.0.20.delta_eta": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9831490243938814,
+        "2": 0.9873417839991981,
+        "3": 0.9850366097650847
+      }
+    },
+    "cone.target_sd.0.20.delta_eta": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.0746961236000061,
+        "2": 0.07457239925861359,
+        "3": 0.07448992133140564
+      }
+    },
+    "cone.median_ratio.0.15.delta_eta": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.15",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9872563946514133,
+        "2": 0.989518942725882,
+        "3": 0.9823586476308799
+      }
+    },
+    "cone.target_sd.0.15.delta_eta": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.15",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.05807331204414368,
+        "2": 0.057978857308626175,
+        "3": 0.05812788009643555
+      }
+    },
+    "cone.median_ratio.0.10.delta_eta": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9883792833582166,
+        "2": 0.990812802852975,
+        "3": 0.9910070492219518
+      }
+    },
+    "cone.target_sd.0.10.delta_eta": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.04057501256465912,
+        "2": 0.04055037721991539,
+        "3": 0.04070182889699936
+      }
+    },
+    "cone.sd_factor.delta_eta": {
+      "unit": "factor",
+      "definition": "target SD at dR < 0.20 / at dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 1.8409390134130608,
+        "2": 1.8390063020668783,
+        "3": 1.8301369582165685
+      }
+    },
+    "cone.drift.delta_eta": {
+      "unit": "ratio",
+      "definition": "median ratio at dR < 0.10 minus at dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.005230258964335155,
+        "2": 0.003471018853776875,
+        "3": 0.005970439456867149
+      }
+    },
+    "stage.median_ratio.parton2reco.delta_eta": {
+      "unit": "ratio",
+      "definition": "parton2reco: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9843039213896543,
+        "2": 0.9842555413943981,
+        "3": 0.9806525661986709
+      }
+    },
+    "stage.median_ratio.parton2genjet.delta_eta": {
+      "unit": "ratio",
+      "definition": "parton2genjet: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9854838659803339,
+        "2": 0.986836708449045,
+        "3": 0.9850613334658433
+      }
+    },
+    "stage.median_ratio.genjet2reco.delta_eta": {
+      "unit": "ratio",
+      "definition": "genjet2reco: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9697288701698064,
+        "2": 0.9705260362566368,
+        "3": 0.9670451607462811
+      }
+    },
+    "cone.median_ratio.0.20.delta_phi": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9951671761478262,
+        "2": 0.9955495189148197,
+        "3": 0.9984886025621396
+      }
+    },
+    "cone.target_sd.0.20.delta_phi": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.06754232197999954,
+        "2": 0.06759707629680634,
+        "3": 0.06788758933544159
+      }
+    },
+    "cone.median_ratio.0.15.delta_phi": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.15",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9962435000591858,
+        "2": 0.9979945627793378,
+        "3": 0.995463705610247
+      }
+    },
+    "cone.target_sd.0.15.delta_phi": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.15",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.05301254615187645,
+        "2": 0.053067583590745926,
+        "3": 0.05316504091024399
+      }
+    },
+    "cone.median_ratio.0.10.delta_phi": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9990382810693261,
+        "2": 0.9950207683123439,
+        "3": 0.9991789895224834
+      }
+    },
+    "cone.target_sd.0.10.delta_phi": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.037522513419389725,
+        "2": 0.03762923553586006,
+        "3": 0.03768075257539749
+      }
+    },
+    "cone.sd_factor.delta_phi": {
+      "unit": "factor",
+      "definition": "target SD at dR < 0.20 / at dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 1.800047913237526,
+        "2": 1.7963978096867634,
+        "3": 1.801651631017761
+      }
+    },
+    "cone.drift.delta_phi": {
+      "unit": "ratio",
+      "definition": "median ratio at dR < 0.10 minus at dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.0038711049214998905,
+        "2": -0.0005287506024758137,
+        "3": 0.0006903869603438473
+      }
+    },
+    "stage.median_ratio.parton2reco.delta_phi": {
+      "unit": "ratio",
+      "definition": "parton2reco: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9980921404876875,
+        "2": 0.9936600840676232,
+        "3": 0.9969042498773117
+      }
+    },
+    "stage.median_ratio.parton2genjet.delta_phi": {
+      "unit": "ratio",
+      "definition": "parton2genjet: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9971693070603407,
+        "2": 0.9920637691530284,
+        "3": 0.9964333731374924
+      }
+    },
+    "stage.median_ratio.genjet2reco.delta_phi": {
+      "unit": "ratio",
+      "definition": "genjet2reco: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.9853252345245578,
+        "2": 0.9848484489718596,
+        "3": 0.9882357837164191
+      }
+    },
+    "cone.median_ratio.0.20.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.8957947411924169,
+        "2": 0.8977694380048451,
+        "3": 0.9028229694146992
+      }
+    },
+    "cone.target_sd.0.20.log_mass_frac": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.3983495235443115,
+        "2": 0.3991195559501648,
+        "3": 0.3986591696739197
+      }
+    },
+    "cone.median_ratio.0.15.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.15",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.8945808018172772,
+        "2": 0.8934454919315109,
+        "3": 0.8954660132888027
+      }
+    },
+    "cone.target_sd.0.15.log_mass_frac": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.15",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.39801090955734253,
+        "2": 0.39868128299713135,
+        "3": 0.3976598381996155
+      }
+    },
+    "cone.median_ratio.0.10.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "median per-bin k-NN ceiling ratio, dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.8891263594557914,
+        "2": 0.8896313712567024,
+        "3": 0.8884910383890833
+      }
+    },
+    "cone.target_sd.0.10.log_mass_frac": {
+      "unit": "",
+      "definition": "target standard deviation on the scoring events, dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.39643076062202454,
+        "2": 0.39760398864746094,
+        "3": 0.3973166048526764
+      }
+    },
+    "cone.sd_factor.log_mass_frac": {
+      "unit": "factor",
+      "definition": "target SD at dR < 0.20 / at dR < 0.10",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 1.0048400959584376,
+        "2": 1.0038117507519464,
+        "3": 1.0033790805741458
+      }
+    },
+    "cone.drift.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "median ratio at dR < 0.10 minus at dR < 0.20",
+      "sources": [
+        "Results/ceilings/cone_control_seed_1.json",
+        "Results/ceilings/cone_control_seed_2.json",
+        "Results/ceilings/cone_control_seed_3.json"
+      ],
+      "per_seed": {
+        "1": -0.006668381736625428,
+        "2": -0.008138066748142658,
+        "3": -0.014331931025615918
+      }
+    },
+    "stage.median_ratio.parton2reco.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "parton2reco: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.8975149938959612,
+        "2": 0.8997589761203606,
+        "3": 0.8943468965933352
+      }
+    },
+    "stage.median_ratio.parton2genjet.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "parton2genjet: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.8972974068759116,
+        "2": 0.8957728656513517,
+        "3": 0.9000392685999221
+      }
+    },
+    "stage.median_ratio.genjet2reco.log_mass_frac": {
+      "unit": "ratio",
+      "definition": "genjet2reco: median per-bin k-NN ceiling ratio, common event set",
+      "sources": [
+        "Results/ceilings/stage_ceilings_seed_1.json",
+        "Results/ceilings/stage_ceilings_seed_2.json",
+        "Results/ceilings/stage_ceilings_seed_3.json"
+      ],
+      "per_seed": {
+        "1": 0.870529575882857,
+        "2": 0.8684218843027403,
+        "3": 0.8679363148213539
+      }
+    },
+    "oracle.R_ref.MDN": {
+      "unit": "ratio",
+      "definition": "parton2reco log_mass_frac CRPS ratio, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.7135939541507743,
+        "2": 0.7101060908402776,
+        "3": 0.7124291869633639
+      }
+    },
+    "oracle.R_oracle.MDN": {
+      "unit": "ratio",
+      "definition": "genjet2reco log_mass_frac CRPS ratio, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.6939126723092347,
+        "2": 0.6917412023873768,
+        "3": 0.6954789002199692
+      }
+    },
+    "oracle.gain.MDN": {
+      "unit": "fraction",
+      "definition": "(S_oracle - S_ref) / S_ref on log_mass_frac",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.06871810887644647,
+        "2": 0.06335037706081083,
+        "3": 0.05894300107999929
+      }
+    },
+    "oracle.floor_ref.MDN.log_pT_resp": {
+      "unit": "",
+      "definition": "exact floor, parton2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.11344039761125314,
+        "2": 0.11224597025471578,
+        "3": 0.11292577314741196
+      }
+    },
+    "oracle.floor_oracle.MDN.log_pT_resp": {
+      "unit": "",
+      "definition": "exact floor, genjet2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.05716976511233554,
+        "2": 0.05739348799492637,
+        "3": 0.057732649410630596
+      }
+    },
+    "oracle.floor_ref.MDN.delta_eta": {
+      "unit": "",
+      "definition": "exact floor, parton2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.04193465406380293,
+        "2": 0.041625351290442626,
+        "3": 0.04155278898388885
+      }
+    },
+    "oracle.floor_oracle.MDN.delta_eta": {
+      "unit": "",
+      "definition": "exact floor, genjet2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.00656856023465813,
+        "2": 0.006566010876187273,
+        "3": 0.006568832310276127
+      }
+    },
+    "oracle.floor_ref.MDN.delta_phi": {
+      "unit": "",
+      "definition": "exact floor, parton2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.03739124039978144,
+        "2": 0.0374029224837915,
+        "3": 0.037264599653766786
+      }
+    },
+    "oracle.floor_oracle.MDN.delta_phi": {
+      "unit": "",
+      "definition": "exact floor, genjet2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.0069750898751991305,
+        "2": 0.006865903018642416,
+        "3": 0.006974245039643343
+      }
+    },
+    "oracle.floor_ref.MDN.log_mass_frac": {
+      "unit": "",
+      "definition": "exact floor, parton2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.2267783432701534,
+        "2": 0.22594659087479477,
+        "3": 0.22467785925005487
+      }
+    },
+    "oracle.floor_oracle.MDN.log_mass_frac": {
+      "unit": "",
+      "definition": "exact floor, genjet2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.2267783432701534,
+        "2": 0.22594659087479477,
+        "3": 0.22467785925005487
+      }
+    },
+    "oracle.R_ref.CFM": {
+      "unit": "ratio",
+      "definition": "parton2reco log_mass_frac CRPS ratio, common event set",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.7137383838919633,
+        "2": 0.7097625276930516,
+        "3": 0.7121665875997999
+      }
+    },
+    "oracle.R_oracle.CFM": {
+      "unit": "ratio",
+      "definition": "genjet2reco log_mass_frac CRPS ratio, common event set",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.6935165767320745,
+        "2": 0.6902800097761318,
+        "3": 0.6944976995552766
+      }
+    },
+    "oracle.gain.CFM": {
+      "unit": "fraction",
+      "definition": "(S_oracle - S_ref) / S_ref on log_mass_frac",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.07064100117515246,
+        "2": 0.06712612869063143,
+        "3": 0.061385813054798025
+      }
+    },
+    "oracle.floor_ref.CFM.log_pT_resp": {
+      "unit": "",
+      "definition": "exact floor, parton2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.11344039761125314,
+        "2": 0.11224597025471578,
+        "3": 0.11292577314741196
+      }
+    },
+    "oracle.floor_oracle.CFM.log_pT_resp": {
+      "unit": "",
+      "definition": "exact floor, genjet2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.05716976511233554,
+        "2": 0.05739348799492637,
+        "3": 0.057732649410630596
+      }
+    },
+    "oracle.floor_ref.CFM.delta_eta": {
+      "unit": "",
+      "definition": "exact floor, parton2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.04193465406380293,
+        "2": 0.041625351290442626,
+        "3": 0.04155278898388885
+      }
+    },
+    "oracle.floor_oracle.CFM.delta_eta": {
+      "unit": "",
+      "definition": "exact floor, genjet2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.00656856023465813,
+        "2": 0.006566010876187273,
+        "3": 0.006568832310276127
+      }
+    },
+    "oracle.floor_ref.CFM.delta_phi": {
+      "unit": "",
+      "definition": "exact floor, parton2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.03739124039978144,
+        "2": 0.0374029224837915,
+        "3": 0.037264599653766786
+      }
+    },
+    "oracle.floor_oracle.CFM.delta_phi": {
+      "unit": "",
+      "definition": "exact floor, genjet2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.0069750898751991305,
+        "2": 0.006865903018642416,
+        "3": 0.006974245039643343
+      }
+    },
+    "oracle.floor_ref.CFM.log_mass_frac": {
+      "unit": "",
+      "definition": "exact floor, parton2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.2267783432701534,
+        "2": 0.22594659087479477,
+        "3": 0.22467785925005487
+      }
+    },
+    "oracle.floor_oracle.CFM.log_mass_frac": {
+      "unit": "",
+      "definition": "exact floor, genjet2reco targets, common event set",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/CFM/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/CFM/seed_1/metrics_common.json",
+        "Surrogates/Output/CFM/seed_2/metrics_common.json",
+        "Surrogates/Output/CFM/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.2267783432701534,
+        "2": 0.22594659087479477,
+        "3": 0.22467785925005487
+      }
+    },
+    "oracle.floor_shift_angular": {
+      "unit": "factor",
+      "definition": "floor(parton2reco) / floor(genjet2reco), angular targets x seeds",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "pooled": [
+        6.384146991990777,
+        5.360682237619765,
+        6.339519089345993,
+        5.447633382270977,
+        6.325749695099485,
+        5.343173267062676
+      ]
+    },
+    "oracle.mass_floor": {
+      "unit": "",
+      "definition": "exact log_mass_frac floor, common event set",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_1/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_2/metrics.json",
+        "Surrogates/Output/MDN/Experiments/genjet2reco/seed_3/metrics.json",
+        "Surrogates/Output/MDN/seed_1/metrics_common.json",
+        "Surrogates/Output/MDN/seed_2/metrics_common.json",
+        "Surrogates/Output/MDN/seed_3/metrics_common.json"
+      ],
+      "per_seed": {
+        "1": 0.2267783432701534,
+        "2": 0.22594659087479477,
+        "3": 0.22467785925005487
+      }
+    },
+    "ladder.MDN.kinematics.ll": {
+      "unit": "nats",
+      "definition": "MDN mean conditional log-likelihood, rung kinematics",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/ablation/seed_1_conditioner_blockskinematics/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_2_conditioner_blockskinematics/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_3_conditioner_blockskinematics/metrics.json"
+      ],
+      "per_seed": {
+        "1": 2.86627197265625,
+        "2": 2.863041639328003,
+        "3": 2.864043951034546
+      }
+    },
+    "ladder.MDN.kinematics.R_mass": {
+      "unit": "ratio",
+      "definition": "MDN log_mass_frac CRPS ratio (first 50000 test events), rung kinematics",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/ablation/seed_1_conditioner_blockskinematics/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_2_conditioner_blockskinematics/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_3_conditioner_blockskinematics/metrics.json"
+      ],
+      "per_seed": {
+        "1": 0.781320331510359,
+        "2": 0.7796948399802904,
+        "3": 0.7772046141613912
+      }
+    },
+    "ladder.MDN.kinematics+pileup.ll": {
+      "unit": "nats",
+      "definition": "MDN mean conditional log-likelihood, rung kinematics+pileup",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup/metrics.json"
+      ],
+      "per_seed": {
+        "1": 2.8715786933898926,
+        "2": 2.8688912391662598,
+        "3": 2.8686110973358154
+      }
+    },
+    "ladder.MDN.kinematics+pileup.R_mass": {
+      "unit": "ratio",
+      "definition": "MDN log_mass_frac CRPS ratio (first 50000 test events), rung kinematics+pileup",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup/metrics.json"
+      ],
+      "per_seed": {
+        "1": 0.7790644615352887,
+        "2": 0.7771335178142582,
+        "3": 0.7752123096331589
+      }
+    },
+    "ladder.MDN.kinematics+pileup+fourier_phi.ll": {
+      "unit": "nats",
+      "definition": "MDN mean conditional log-likelihood, rung kinematics+pileup+fourier_phi",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup+fourier_phi/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup+fourier_phi/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup+fourier_phi/metrics.json"
+      ],
+      "per_seed": {
+        "1": 2.872728109359741,
+        "2": 2.8709590435028076,
+        "3": 2.872366189956665
+      }
+    },
+    "ladder.MDN.kinematics+pileup+fourier_phi.R_mass": {
+      "unit": "ratio",
+      "definition": "MDN log_mass_frac CRPS ratio (first 50000 test events), rung kinematics+pileup+fourier_phi",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup+fourier_phi/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup+fourier_phi/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup+fourier_phi/metrics.json"
+      ],
+      "per_seed": {
+        "1": 0.7790449871309731,
+        "2": 0.7774392448387838,
+        "3": 0.7750150190605097
+      }
+    },
+    "ladder.MDN.kinematics+pileup+flavour.ll": {
+      "unit": "nats",
+      "definition": "MDN mean conditional log-likelihood, rung kinematics+pileup+flavour",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup+flavour/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup+flavour/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup+flavour/metrics.json"
+      ],
+      "per_seed": {
+        "1": 2.974698781967163,
+        "2": 2.976064443588257,
+        "3": 2.9775469303131104
+      }
+    },
+    "ladder.MDN.kinematics+pileup+flavour.R_mass": {
+      "unit": "ratio",
+      "definition": "MDN log_mass_frac CRPS ratio (first 50000 test events), rung kinematics+pileup+flavour",
+      "sources": [
+        "Surrogates/Output/MDN/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup+flavour/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup+flavour/metrics.json",
+        "Surrogates/Output/MDN/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup+flavour/metrics.json"
+      ],
+      "per_seed": {
+        "1": 0.7150245513750343,
+        "2": 0.7159898310289095,
+        "3": 0.7119307484752835
+      }
+    },
+    "ladder.MDN.full.ll": {
+      "unit": "nats",
+      "definition": "MDN mean conditional log-likelihood, rung full",
+      "sources": [
+        "Surrogates/Output/MDN/seed_1/metrics.json",
+        "Surrogates/Output/MDN/seed_2/metrics.json",
+        "Surrogates/Output/MDN/seed_3/metrics.json"
+      ],
+      "per_seed": {
+        "1": 2.9785494804382324,
+        "2": 2.976689100265503,
+        "3": 2.9791853427886963
+      }
+    },
+    "ladder.MDN.full.R_mass": {
+      "unit": "ratio",
+      "definition": "MDN log_mass_frac CRPS ratio (first 50000 test events), rung full",
+      "sources": [
+        "Surrogates/Output/MDN/seed_1/metrics.json",
+        "Surrogates/Output/MDN/seed_2/metrics.json",
+        "Surrogates/Output/MDN/seed_3/metrics.json"
+      ],
+      "per_seed": {
+        "1": 0.7149106546535412,
+        "2": 0.7162399121280827,
+        "3": 0.7120583044663654
+      }
+    },
+    "ladder.CFM.kinematics.ll": {
+      "unit": "nats",
+      "definition": "CFM mean conditional log-likelihood, rung kinematics",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/ablation/seed_1_conditioner_blockskinematics/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_2_conditioner_blockskinematics/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_3_conditioner_blockskinematics/metrics.json"
+      ],
+      "per_seed": {
+        "1": 2.917210340499878,
+        "2": 2.9238193035125732,
+        "3": 2.924175977706909
+      }
+    },
+    "ladder.CFM.kinematics.R_mass": {
+      "unit": "ratio",
+      "definition": "CFM log_mass_frac CRPS ratio (first 50000 test events), rung kinematics",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/ablation/seed_1_conditioner_blockskinematics/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_2_conditioner_blockskinematics/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_3_conditioner_blockskinematics/metrics.json"
+      ],
+      "per_seed": {
+        "1": 0.7813769139694134,
+        "2": 0.7792493741843461,
+        "3": 0.7772910697362604
+      }
+    },
+    "ladder.CFM.kinematics+pileup.ll": {
+      "unit": "nats",
+      "definition": "CFM mean conditional log-likelihood, rung kinematics+pileup",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup/metrics.json"
+      ],
+      "per_seed": {
+        "1": 2.923330545425415,
+        "2": 2.930410146713257,
+        "3": 2.931548833847046
+      }
+    },
+    "ladder.CFM.kinematics+pileup.R_mass": {
+      "unit": "ratio",
+      "definition": "CFM log_mass_frac CRPS ratio (first 50000 test events), rung kinematics+pileup",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup/metrics.json"
+      ],
+      "per_seed": {
+        "1": 0.7791463961916222,
+        "2": 0.7768655077484791,
+        "3": 0.7748188928467433
+      }
+    },
+    "ladder.CFM.kinematics+pileup+fourier_phi.ll": {
+      "unit": "nats",
+      "definition": "CFM mean conditional log-likelihood, rung kinematics+pileup+fourier_phi",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup+fourier_phi/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup+fourier_phi/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup+fourier_phi/metrics.json"
+      ],
+      "per_seed": {
+        "1": 2.928657293319702,
+        "2": 2.932490825653076,
+        "3": 2.9330508708953857
+      }
+    },
+    "ladder.CFM.kinematics+pileup+fourier_phi.R_mass": {
+      "unit": "ratio",
+      "definition": "CFM log_mass_frac CRPS ratio (first 50000 test events), rung kinematics+pileup+fourier_phi",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup+fourier_phi/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup+fourier_phi/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup+fourier_phi/metrics.json"
+      ],
+      "per_seed": {
+        "1": 0.7789496098813332,
+        "2": 0.7767840845975448,
+        "3": 0.7746661117215207
+      }
+    },
+    "ladder.CFM.kinematics+pileup+flavour.ll": {
+      "unit": "nats",
+      "definition": "CFM mean conditional log-likelihood, rung kinematics+pileup+flavour",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup+flavour/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup+flavour/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup+flavour/metrics.json"
+      ],
+      "per_seed": {
+        "1": 3.0313966274261475,
+        "2": 3.036428689956665,
+        "3": 3.03721022605896
+      }
+    },
+    "ladder.CFM.kinematics+pileup+flavour.R_mass": {
+      "unit": "ratio",
+      "definition": "CFM log_mass_frac CRPS ratio (first 50000 test events), rung kinematics+pileup+flavour",
+      "sources": [
+        "Surrogates/Output/CFM/Experiments/ablation/seed_1_conditioner_blockskinematics+pileup+flavour/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_2_conditioner_blockskinematics+pileup+flavour/metrics.json",
+        "Surrogates/Output/CFM/Experiments/ablation/seed_3_conditioner_blockskinematics+pileup+flavour/metrics.json"
+      ],
+      "per_seed": {
+        "1": 0.7153421653862323,
+        "2": 0.7155449340321616,
+        "3": 0.7117575269738929
+      }
+    },
+    "ladder.CFM.full.ll": {
+      "unit": "nats",
+      "definition": "CFM mean conditional log-likelihood, rung full",
+      "sources": [
+        "Surrogates/Output/CFM/seed_1/metrics.json",
+        "Surrogates/Output/CFM/seed_2/metrics.json",
+        "Surrogates/Output/CFM/seed_3/metrics.json"
+      ],
+      "per_seed": {
+        "1": 3.035024881362915,
+        "2": 3.0398855209350586,
+        "3": 3.0380196571350098
+      }
+    },
+    "ladder.CFM.full.R_mass": {
+      "unit": "ratio",
+      "definition": "CFM log_mass_frac CRPS ratio (first 50000 test events), rung full",
+      "sources": [
+        "Surrogates/Output/CFM/seed_1/metrics.json",
+        "Surrogates/Output/CFM/seed_2/metrics.json",
+        "Surrogates/Output/CFM/seed_3/metrics.json"
+      ],
+      "per_seed": {
+        "1": 0.715117905944164,
+        "2": 0.7154503996307598,
+        "3": 0.7116213166495654
+      }
+    },
+    "config.width": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Experiments/configs/base.json"
+      ],
+      "value": 512
+    },
+    "config.depth": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Experiments/configs/base.json"
+      ],
+      "value": 6
+    },
+    "config.epochs": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Experiments/configs/base.json"
+      ],
+      "value": 100
+    },
+    "config.batch_size": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Experiments/configs/base.json"
+      ],
+      "value": 4096
+    },
+    "config.lr": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Experiments/configs/base.json"
+      ],
+      "value": 0.0003
+    },
+    "config.weight_decay": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Experiments/configs/base.json"
+      ],
+      "value": 1e-05
+    },
+    "config.n_eval_samples": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Experiments/configs/base.json"
+      ],
+      "value": 50
+    },
+    "config.n_components": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Experiments/configs/mdn_parton2reco.json"
+      ],
+      "value": 8
+    },
+    "config.lambda_calib": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Experiments/configs/mdn_parton2reco.json"
+      ],
+      "value": 0.1
+    },
+    "config.cfm_n_steps": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Experiments/configs/fm_parton2reco.json"
+      ],
+      "value": 100
+    },
+    "config.mdn_head_width": {
+      "unit": "",
+      "definition": "MDNHead hidden width = width // 2",
+      "sources": [
+        "Surrogates/MDN/model.py"
+      ],
+      "value": 256
+    },
+    "config.target_dim": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/features.py"
+      ],
+      "value": 4
+    },
+    "config.t_embed_dim": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/CFM/model.py"
+      ],
+      "value": 128
+    },
+    "config.cond_dim": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/features.py"
+      ],
+      "value": 26
+    },
+    "config.fourier_features": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/features.py"
+      ],
+      "value": 16
+    },
+    "config.knn_dims": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/baselines.py"
+      ],
+      "value": 4
+    },
+    "config.dr_match": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/features.py"
+      ],
+      "value": 0.2
+    },
+    "config.eta_cut": {
+      "unit": "",
+      "definition": "reconstructed-jet |eta| cut",
+      "sources": [
+        "Data/root2par_dataset_gen_flat.py"
+      ],
+      "value": 2.4
+    },
+    "config.pt_min": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/settings.py"
+      ],
+      "value": 50.0
+    },
+    "config.pt_max": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/settings.py"
+      ],
+      "value": 1000.0
+    },
+    "config.k_ladder": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/settings.py"
+      ],
+      "value": [
+        5,
+        10,
+        20,
+        50,
+        100
+      ]
+    },
+    "config.n_pt_bins": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/settings.py"
+      ],
+      "value": 14
+    },
+    "config.scoring_events": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/settings.py"
+      ],
+      "value": 200000
+    },
+    "config.dump_m": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/settings.py"
+      ],
+      "value": 200
+    },
+    "config.max_train_per_flavour": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/settings.py"
+      ],
+      "value": 400000
+    },
+    "config.min_count": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/settings.py"
+      ],
+      "value": 200
+    },
+    "config.crps_eval_events": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/settings.py"
+      ],
+      "value": 50000
+    },
+    "config.cones": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/settings.py"
+      ],
+      "value": [
+        0.2,
+        0.15,
+        0.1
+      ]
+    },
+    "config.lut_bins_pt": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/baselines.py"
+      ],
+      "value": 40
+    },
+    "config.lut_bins_eta": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/baselines.py"
+      ],
+      "value": 12
+    },
+    "config.lut_bins_pu": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/baselines.py"
+      ],
+      "value": 6
+    },
+    "config.n_flavours": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/features.py"
+      ],
+      "value": 6
+    },
+    "config.lut_cells": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/baselines.py"
+      ],
+      "value": 17280
+    },
+    "config.lut_min_count": {
+      "unit": "",
+      "definition": "",
+      "sources": [
+        "Surrogates/common/baselines.py"
+      ],
+      "value": 20
+    },
+    "analytic.ensemble_inflation_m50": {
+      "unit": "fraction",
+      "definition": "(m+1)/m - 1 at m = 50",
+      "sources": [],
+      "value": 0.020000000000000018
+    },
+    "dataset.n_train": {
+      "unit": "jets",
+      "definition": "rows in the parton2reco training split",
+      "sources": [
+        "Surrogates/Output/MDN/seed_1/stats.json",
+        "Surrogates/Output/MDN/seed_2/stats.json",
+        "Surrogates/Output/MDN/seed_3/stats.json"
+      ],
+      "per_seed": {
+        "1": 8610279,
+        "2": 8610655,
+        "3": 8609198
+      }
+    }
+  }
+}

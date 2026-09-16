@@ -1,0 +1,18 @@
+{
+  "parton2reco": {"MDN": "mdn_parton2reco.json", "CFM": "fm_parton2reco.json"},
+  "genjet2reco": {"MDN": "mdn_genjet2reco.json", "CFM": "fm_genjet2reco.json"},
+  "ladder": {
+    "MDN": {
+      "kinematics": "ablation/mdn_parton2reco_conditioner_blocks_kinematics.json",
+      "kinematics+pileup": "ablation/mdn_parton2reco_conditioner_blocks_kinematics+pileup.json",
+      "kinematics+pileup+fourier_phi": "ablation/mdn_parton2reco_conditioner_blocks_kinematics+pileup+fourier_phi.json",
+      "kinematics+pileup+flavour": "ablation/mdn_parton2reco_conditioner_blocks_kinematics+pileup+flavour.json"
+    },
+    "CFM": {
+      "kinematics": "ablation/fm_parton2reco_conditioner_blocks_kinematics.json",
+      "kinematics+pileup": "ablation/fm_parton2reco_conditioner_blocks_kinematics+pileup.json",
+      "kinematics+pileup+fourier_phi": "ablation/fm_parton2reco_conditioner_blocks_kinematics+pileup+fourier_phi.json",
+      "kinematics+pileup+flavour": "ablation/fm_parton2reco_conditioner_blocks_kinematics+pileup+flavour.json"
+    }
+  }
+}

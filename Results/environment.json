@@ -1,0 +1,12 @@
+{
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "polars": "1.42.1",
+  "scipy": "1.18.0",
+  "matplotlib": "3.11.1",
+  "torch": "2.13.0+cu132",
+  "cuda": "13.2",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "git_sha": "c00070cfed006112c7932770948f1ce1fbda9cd7",
+  "git_dirty": false
+}

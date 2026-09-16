@@ -1,0 +1,23 @@
+{
+  "data": "Data/dataset/PJ_dataset_qcd_flat_15to7000.parquet",
+  "width": 512,
+  "depth": 6,
+  "batch_size": 4096,
+  "lr": 0.0003,
+  "weight_decay": 1e-05,
+  "epochs": 100,
+  "num_workers": 24,
+  "n_eval_samples": 50,
+  "val_crps_events": 20000,
+  "val_crps_samples": 20,
+  "stage": "parton2reco",
+  "conditioner_blocks": [
+    "kinematics"
+  ],
+  "n_components": 8,
+  "lambda_calib": 0.1,
+  "pi_tau_start": 1.5,
+  "pi_tau_anneal_frac": 0.5,
+  "save_root": "ablation",
+  "run_tag": "conditioner_blockskinematics"
+}
